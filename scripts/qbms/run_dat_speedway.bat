@@ -1,0 +1,1 @@
+F:\git\qbms\quickbms.exe -D -. -Y -F "*.dat" dat.bms "F:\Games\Speedway Championships" unpacked_sc

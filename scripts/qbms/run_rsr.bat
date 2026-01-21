@@ -1,0 +1,1 @@
+F:\git\qbms\quickbms.exe -D -. -Y -F "*.rsr" rsr.bms F:\creatures\Setup unpacked2

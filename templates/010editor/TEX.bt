@@ -1,0 +1,24 @@
+//------------------------------------------------
+//--- 010 Editor v12.0.1 Binary Template
+//
+//      File: 
+//   Authors: 
+//   Version: 
+//   Purpose: 
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+
+uint magic;
+uint type;
+uint width;
+uint height;
+uint unk;
+uint size;
+
+if (type == 1)
+    byte DXT1[width*height >> 1];
+else if (type == 4)
+    byte DXT3[width*height];

@@ -1,0 +1,199 @@
+//------------------------------------------------
+//--- 010 Editor v12.0.1 Binary Template
+//
+//      File: 
+//   Authors: 
+//   Version: 
+//   Purpose: 
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+
+struct vector_3f {
+  float x;
+  float y;
+  float z;
+};
+
+struct vector_4f {
+  float x;
+  float y;
+  float z;
+  float w;
+};
+
+struct vector_3u {
+  uint x;
+  uint y;
+  uint z;
+};
+
+struct vector_2f {
+  float x;
+  float y;
+};
+
+char magic[4];
+uint unk;
+uint unk;
+uint unk;
+uint numob;
+uint unk;
+uint unk;
+
+struct mat {
+    uint unk;
+    uint index;
+    char name1[64];
+    char name2[64];
+    float unk0[13];
+    uint num;
+    uint unk;
+    uint num1;
+    uint unk;
+    struct {
+      uint unk;
+      char name3[64];
+      char name4[64];
+      uint unk;
+      float unk;
+      char name5[272];
+    } mat[num];
+};
+
+  char name[4];
+  uint matnum;
+  uint unk;
+
+  struct {
+    mat m;
+    mat m1[m.num1] <optimize=false>;
+  } mats[matnum] <optimize=false>;
+
+while (!FEof())
+struct {
+  char name[4];
+  uint unk;
+  char name1[64];
+  char name2[64];
+  if (unk == 16386)
+  {
+    char name3[64];
+    float unk0[37];
+
+    uint unk;
+    uint num;
+
+    struct {
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+    } j[num];
+
+    char name5[4];
+    uint unk;
+    uint unk;
+    uint vertnum;
+    uint unk;
+    uint facenum;
+    uint unk;
+    uint unk;
+    float unk4[12]; 
+    char name6[64]; 
+    uint unk;
+
+    struct {
+      vector_3f coordinates;
+      vector_3f normal;
+      vector_2f uv;
+    } vertex[vertnum];
+
+    struct {
+      vector_3u indexes;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+    } face[facenum];
+  } else if (unk == 16389) {
+
+    char name8[4];
+    uint unk;
+    uint unk;
+   float unk00[74];    
+  } else if (unk == 16388) {
+
+    char name8[4];
+    uint unk;
+   float unk00[74];    
+  } else if (unk == 16390) {
+
+    char name8[64];
+    uint unk;
+    uint unk;
+    uint unk;
+    float unk00[34];
+    char name5[4]; 
+    char name9[64]; 
+    float u[6]; 
+ 
+    uint num0;
+    uint num1;
+    struct {
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+      float unk;
+    } y1[num1];
+  };
+} object;

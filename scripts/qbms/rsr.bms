@@ -1,0 +1,18 @@
+# Game: 
+# Description:
+# 
+# Link:
+
+ComType clzw
+
+For i = 0 < 3 
+    get code long
+    if code == "dupa"
+        GoTo 174 0 SEEK_CUR
+    else
+        get fsize long
+        get size long
+        xmath compfsize "size - 12"    
+        cLog "test" 0 compfsize fsize
+    endif
+next i

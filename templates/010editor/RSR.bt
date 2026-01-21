@@ -1,0 +1,27 @@
+//------------------------------------------------
+//--- 010 Editor v12.0.1 Binary Template
+//
+//      File: 
+//   Authors: 
+//   Version: 
+//   Purpose: 
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+
+struct compressed_file {
+  char code[4];
+  if (code == "dupa")
+    FSkip(174);
+  else 
+  {
+    uint size;
+    uint compSize;
+    byte data[compSize - 12];
+  }
+};
+
+while (!FEof())
+  compressed_file file;

@@ -1,0 +1,17 @@
+# Game: 
+# Description:
+# 
+# Link:
+
+IDString "\x47\x41\x33\x30"
+get unk long
+get NUM LONG
+get SIZE long
+get UNK long
+
+For i = 0 < num    
+    get fsize long
+    get offset long
+    getdstring name 260    
+    Log name offset fsize
+next i
